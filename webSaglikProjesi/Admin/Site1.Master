@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="webSaglikProjesi.Admin.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Sağlık Ürünleri E-Ticaret Sitesi Admin Paneli</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../Content/style/style.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div id="wrap">
+        <div id="header">
+            <h1><a href="Default.aspx">SAĞLIK ÜRÜNLERİ</a></h1>
+            <h2>Admin Paneli</h2>
+        </div>
+        <div id="top"></div>
+        <div id="contentt">
+            <div id="headermenu">
+                <div class="headerm">
+                    <ul style="text-align:center;color:white">
+                        <h3 id="UstBaslik">Kategori, Alt Kategori ve Ürün Ekleme - Güncelleme</h3>
+                    </ul>
+                </div>
+            </div>
+            <div class="left">
+                <asp:Panel ID="pnlAdminIslemleri" runat="server" Visible="false">
+                    <h2>Admin İşlemleri</h2>
+                <ul>
+                    <li><a href="KategoriEkle.aspx">Kategori İşlemleri</a></li>
+                    <li><a href="AltKategoriEkle.aspx">AltKategori İşlemleri</a></li>
+                    <li><a href="UrunEkle.aspx">Ürün İşlemleri</a></li>
+                </ul></asp:Panel>
+            </div>
+            <div class="middle">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="right">
+
+            </div>
+            <div style="clear:both"></div>
+        </div>
+        <div id="bottom"></div>
+        <div id="footer">@Copyright MS-YAZ-08 Yazılım 2016</div>
+    </div>
+    </div>
+    </form>
+</body>
+</html>
